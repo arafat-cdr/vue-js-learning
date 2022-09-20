@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script src="vue.global.js"></script>
+	<title>vue js</title>
+</head>
+<body>
+	<header>
+		<h3>Vue js Bangla Tuitorial</h3>
+	</header>
+    
+    <div id="app">
+    	<!-- we learning Two way Data Binding -->
+    	<h3>Enter A Number</h3>
+    	<!-- <input v-bind:value="num" type="text" @input="getInput"> -->
+    	<!-- 2 way binding means .. event binding and method binding at the smae time -->
+    	<!-- doing it in a line using v-model -->
+    	<!-- <input v-model="num" type="text"> -->
+    	<!-- let's fix the string value isue and make it number using vue -->
+    	<input v-model.number="num" type="text">
+    	<button @click="getDouble">Get Double</button>
+    	<button @click="getSquare">Get Square</button>
+    	<button @click="addTen">Add Ten</button>
+    	<button @click="reset">Reset</button>
+    	<hr>
+    	<br>
+    	<span>Enter Number: </span> {{num}} <br>
+    	<span>Result: </span> {{result}}
+    </div>
+
+<script src="app.js"></script>
+</body>
+</html>

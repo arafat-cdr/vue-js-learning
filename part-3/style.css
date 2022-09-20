@@ -1,0 +1,24 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: sans-serif;
+}
+
+header {
+	background: black;
+	color: white;
+	font-size: 22px;
+	padding:  22px;
+}
+
+header h3 {
+	text-align: center;
+}
+
+#app {
+	padding:  33px;
+}

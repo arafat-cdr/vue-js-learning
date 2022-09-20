@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script src="vue.global.js"></script>
+	<title>vue js</title>
+</head>
+<body>
+	<header>
+		<h3>Vue js Bangla Tuitorial</h3>
+	</header>
+    
+    <div id="app">
+    	<!-- We Learn here different between computed, methods, watches, properties ... -->
+    	<br>
+    	<span>First Name:</span>
+    	<input type="text" v-model="firstName" placeholder="Enter First Name">
+    	<br><br><br>
+    	<span>Last Name:</span>
+    	<input type="text" v-model="lastName" placeholder="Enter Last Name">
+    	<br><br><br>
+    	<p>Full Name: {{fullName}}</p>
+    </div>
+
+<script src="app.js"></script>
+</body>
+</html>

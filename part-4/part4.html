@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script src="vue.global.js"></script>
+	<title>vue js</title>
+</head>
+<body>
+	<header>
+		<h3>Vue js Bangla Tuitorial</h3>
+	</header>
+    
+    <div id="app">
+    	{{msg}}
+    	<h3>
+    		Welcome to
+    		{{tutorialInfo.name}} <!-- ata k bole string interpulation -->
+    	</h3>
+    	<p>Get the sorce code at <a v-bind:href="tutorialInfo.githubLink">Github Link</a></p>
+    	<!-- ata k ->  v-bind: bole attribute binding ata sara link tik tak kaj korbe na  -->
+    	<!-- v:bind er short cut o ase ... short cut holo : for example.. :href="" -->
+
+    	<h3 v-html="htmlCode"></h3>
+
+    </div>
+
+<script src="app.js"></script>
+</body>
+</html>

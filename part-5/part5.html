@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script src="vue.global.js"></script>
+	<title>vue js</title>
+</head>
+<body>
+	<header>
+		<h3>Vue js Bangla Tuitorial</h3>
+	</header>
+    
+    <div id="app">
+    	<!-- we are learning vue methods and events  -->
+    	<h3>Time Now: {{getCurrentTime()}}</h3>
+    	<h4>{{count}}</h4>
+
+    	<button v-on:click="increase()">Increment</button>
+    	<button @click="decrease()">Decrement</button>
+    	<button @click="count++">Direct Change</button>
+    	<button @click="test($event, 10)">Test</button>
+    	<!-- @ is the short hand property of v-on: binding -->
+    </div>
+
+<script src="app.js"></script>
+</body>
+</html>

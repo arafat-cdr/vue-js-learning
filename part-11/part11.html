@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script src="vue.global.js"></script>
+	<title>vue js</title>
+</head>
+<body>
+	<header>
+		<h3>Vue js Bangla Tuitorial</h3>
+	</header>
+    
+    <div id="app">
+    	<!-- We Learn here list Redering ... -->
+    	<input type="text" v-model="new_skill.name">
+    	<button class="btn" @click="addSkill">Add New</button>
+    	<h3>Skills</h3>
+    	<ul>
+    		<li v-for="(skill, index) in skills" @click="removeMe(index)" :key="skill.name">
+    			<p>{{skill.name}} ( {{skill.exp}} )</p>
+    			<p><input type="text" placeholder="name cheeck" @click.stop></p>
+    		</li>
+    	</ul>
+    </div>
+
+<script src="app.js"></script>
+</body>
+</html>

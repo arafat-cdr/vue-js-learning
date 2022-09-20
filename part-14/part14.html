@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script src="vue.global.js"></script>
+	<title>vue js</title>
+</head>
+<body>
+	<header>
+		<h3>Vue js Bangla Tuitorial</h3>
+	</header>
+    
+    <div id="app">
+    	<!-- We Learn here conditional Redering ... -->
+    	<button class="btn" @click="toggle">show/hide</button>
+    	<div class="card" v-if="show"></div>
+    	<br><hr>
+    	<h3>Skills</h3>
+    	<ul>
+    		<li v-for="(skill, index) in skills" :key="skill.name">
+    			<p>
+    				{{skill.name}} ( {{skill.exp}} )
+    				<span v-if="skill.exp <= 3">-begainer</span>
+    				<span v-else-if="skill.exp <= 5">-expert</span>
+    				<span v-else>-ninja pro</span>
+    			</p>
+    		</li>
+    	</ul>
+    	
+    </div>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script src="vue.global.js"></script>
+	<title>vue js</title>
+</head>
+<body>
+	<header>
+		<h3>Vue js Bangla Tuitorial</h3>
+	</header>
+    
+    <div id="app">
+    	<!-- we learning event modifier -->
+    	<form @submit.prevent="formHandle">
+    		<h3>Enter Your Name</h3>
+    		<input type="text" @keyup.enter="handleKeyUp">
+    		<h3>Welcome {{name}}!</h3>
+
+    		<button type="submit">Ok</button>
+    	</form>
+    	<hr>
+    	<br>
+    	<div class="card" @click="cardClickHandle">
+    		<button @click.stop="buttonClickHandle">Click Me</button>
+    		<!-- @click.stop work as stoppropagation -->
+    	</div>
+    </div>
+
+<script src="app.js"></script>
+</body>
+</html>

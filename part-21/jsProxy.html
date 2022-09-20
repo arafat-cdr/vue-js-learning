@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+     
+        var handeler = {
+        	get: function(target, name){
+
+        		// custom logic
+        		if(name in target){
+        			return "Your Expectd Value are: " + target[name];
+        		}else{
+        			// return "You have Error !!!";
+        			return target;
+        		}
+
+        	}
+        }
+
+		var p = new Proxy( {}, handeler );
+
+		p.name = "arafat";
+		p.pro = "coder";
+
+		console.log(p.name);
+		console.log(p.pro);
+		console.log(p.age.name.name.age.name);
+
+	</script>
+</body>
+</html>

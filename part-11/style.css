@@ -1,0 +1,71 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: sans-serif;
+}
+
+header {
+	background: black;
+	color: white;
+	font-size: 22px;
+	padding:  22px;
+}
+
+header h3 {
+	text-align: center;
+}
+
+#app {
+	padding:  33px;
+}
+
+button{
+	padding: 5px 11px;
+	margin:  5px;
+}
+
+.btn{
+	min-width: 100px;
+}
+
+.active{
+	background-color: rgb(3, 78, 97);
+	color: white;
+	border: 1px solid red;
+}
+.bold{
+	font-weight: bold;
+}
+
+input{
+	min-width: 50px;
+	padding: 10px;
+	border: 1px solid black;
+}
+input[]:focus{
+	background-color: #ddd;
+}
+.card{
+	height: 100px;
+	width: 100px;
+	background-color: grey;
+}
+.red{
+	height: 100px;
+	width: 100px;
+	background-color: red;
+}
+.green{
+	height: 100px;
+	width: 100px;
+	background-color: green;
+}
+.blue{
+	height: 100px;
+	width: 100px;
+	background-color: blue;
+}
